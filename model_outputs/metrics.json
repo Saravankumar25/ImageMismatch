@@ -1,0 +1,1608 @@
+{
+ "test": {
+  "cosine": {
+   "A": {
+    "overall": {
+     "n": 30000,
+     "pos": 15000,
+     "accuracy": 0.6712333333333333,
+     "precision": 0.6056256939589587,
+     "recall": 0.9818,
+     "f1": 0.7491415926952717,
+     "roc_auc": 0.7003572711111111,
+     "pr_auc": 0.6592482484712793,
+     "ece": 0.005766875369138085,
+     "threshold": 0.4166666666666667,
+     "confusion": [
+      [
+       5410,
+       9590
+      ],
+      [
+       273,
+       14727
+      ]
+     ]
+    },
+    "easy": {
+     "n": 20000,
+     "pos": 15000,
+     "accuracy": 0.9786,
+     "precision": 0.9895847332347802,
+     "recall": 0.9818,
+     "f1": 0.9856769961849943,
+     "roc_auc": 0.9962438133333333,
+     "pr_auc": 0.99856835171598,
+     "ece": 0.28866089818131463,
+     "threshold": 0.4166666666666667,
+     "confusion": [
+      [
+       4845,
+       155
+      ],
+      [
+       273,
+       14727
+      ]
+     ]
+    },
+    "hard": {
+     "n": 20506,
+     "pos": 15000,
+     "accuracy": 0.7181800448649176,
+     "precision": 0.7278703108782681,
+     "recall": 0.9818,
+     "f1": 0.8359776346039225,
+     "roc_auc": 0.44105846954837147,
+     "pr_auc": 0.7357135537246078,
+     "ece": 0.1265608189097399,
+     "threshold": 0.4166666666666667,
+     "confusion": [
+      [
+       0,
+       5506
+      ],
+      [
+       273,
+       14727
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 19494,
+     "pos": 15000,
+     "accuracy": 0.7844464963578537,
+     "precision": 0.789397512864494,
+     "recall": 0.9818,
+     "f1": 0.8751485619206085,
+     "roc_auc": 0.6888455867082035,
+     "pr_auc": 0.8622495730628634,
+     "ece": 0.18163964771841407,
+     "threshold": 0.4166666666666667,
+     "confusion": [
+      [
+       565,
+       3929
+      ],
+      [
+       273,
+       14727
+      ]
+     ]
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "n": 18996,
+     "pos": 9498,
+     "accuracy": 0.6353442830069488,
+     "precision": 0.5818737660021654,
+     "recall": 0.9618867129922088,
+     "f1": 0.7251081392118734,
+     "roc_auc": 0.6069599562381965,
+     "pr_auc": 0.5761497286994682,
+     "ece": 0.014411386223036041,
+     "threshold": 0.37681159420289856,
+     "confusion": [
+      [
+       2933,
+       6565
+      ],
+      [
+       362,
+       9136
+      ]
+     ]
+    },
+    "easy": {
+     "n": 12664,
+     "pos": 9498,
+     "accuracy": 0.9408559696778269,
+     "precision": 0.9593615457313872,
+     "recall": 0.9618867129922088,
+     "f1": 0.9606224699016875,
+     "roc_auc": 0.9806883571725111,
+     "pr_auc": 0.9932299729309662,
+     "ece": 0.2917091342565942,
+     "threshold": 0.37681159420289856,
+     "confusion": [
+      [
+       2779,
+       387
+      ],
+      [
+       362,
+       9136
+      ]
+     ]
+    },
+    "hard": {
+     "n": 13396,
+     "pos": 9498,
+     "accuracy": 0.681994625261272,
+     "precision": 0.7009360135031456,
+     "recall": 0.9618867129922088,
+     "f1": 0.8109355583170602,
+     "roc_auc": 0.32333502254424007,
+     "pr_auc": 0.6568978735500939,
+     "ece": 0.13392439269548018,
+     "threshold": 0.37681159420289856,
+     "confusion": [
+      [
+       0,
+       3898
+      ],
+      [
+       362,
+       9136
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 11932,
+     "pos": 9498,
+     "accuracy": 0.7785786121354341,
+     "precision": 0.8002803083391731,
+     "recall": 0.9618867129922088,
+     "f1": 0.8736731376111696,
+     "roc_auc": 0.5750560425902923,
+     "pr_auc": 0.8306460101619831,
+     "ece": 0.22920717184700978,
+     "threshold": 0.37681159420289856,
+     "confusion": [
+      [
+       154,
+       2280
+      ],
+      [
+       362,
+       9136
+      ]
+     ]
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.6252498334443705,
+     "precision": 0.5858839652809502,
+     "recall": 0.8544303797468354,
+     "f1": 0.695121951219512,
+     "roc_auc": 0.7286263965262332,
+     "pr_auc": 0.7401085411611797,
+     "ece": 0.023995963575998563,
+     "threshold": 0.35294117647058826,
+     "confusion": [
+      [
+       1189,
+       1813
+      ],
+      [
+       437,
+       2565
+      ]
+     ]
+    },
+    "text_swap": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.6252498334443705,
+     "precision": 0.5858839652809502,
+     "recall": 0.8544303797468354,
+     "f1": 0.695121951219512,
+     "roc_auc": 0.7286263965262332,
+     "pr_auc": 0.7401085411611797,
+     "ece": 0.023995963575998563,
+     "threshold": 0.35294117647058826,
+     "confusion": [
+      [
+       1189,
+       1813
+      ],
+      [
+       437,
+       2565
+      ]
+     ]
+    }
+   }
+  },
+  "logreg": {
+   "A": {
+    "overall": {
+     "n": 30000,
+     "pos": 15000,
+     "accuracy": 0.6568333333333334,
+     "precision": 0.602313747662332,
+     "recall": 0.9232666666666667,
+     "f1": 0.7290290316637275,
+     "roc_auc": 0.7389964422222223,
+     "pr_auc": 0.6977526455963956,
+     "ece": 0.005852617421165756,
+     "threshold": 0.37037037037037035,
+     "confusion": [
+      [
+       5856,
+       9144
+      ],
+      [
+       1151,
+       13849
+      ]
+     ]
+    },
+    "easy": {
+     "n": 20000,
+     "pos": 15000,
+     "accuracy": 0.8968,
+     "precision": 0.9381520119225037,
+     "recall": 0.9232666666666667,
+     "f1": 0.9306498219205699,
+     "roc_auc": 0.94978612,
+     "pr_auc": 0.9808676567184099,
+     "ece": 0.25803937526650095,
+     "threshold": 0.37037037037037035,
+     "confusion": [
+      [
+       4087,
+       913
+      ],
+      [
+       1151,
+       13849
+      ]
+     ]
+    },
+    "hard": {
+     "n": 20506,
+     "pos": 15000,
+     "accuracy": 0.7032575831463962,
+     "precision": 0.7373156577756482,
+     "recall": 0.9232666666666667,
+     "f1": 0.8198798212118521,
+     "roc_auc": 0.5643309117326554,
+     "pr_auc": 0.7750479656961575,
+     "ece": 0.14495725198652754,
+     "threshold": 0.37037037037037035,
+     "confusion": [
+      [
+       572,
+       4934
+      ],
+      [
+       1151,
+       13849
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 19494,
+     "pos": 15000,
+     "accuracy": 0.7718272288909408,
+     "precision": 0.8077102531202612,
+     "recall": 0.9232666666666667,
+     "f1": 0.8616313071610775,
+     "roc_auc": 0.7184713024773772,
+     "pr_auc": 0.8853483742064279,
+     "ece": 0.2031206091078904,
+     "threshold": 0.37037037037037035,
+     "confusion": [
+      [
+       1197,
+       3297
+      ],
+      [
+       1151,
+       13849
+      ]
+     ]
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "n": 18996,
+     "pos": 9498,
+     "accuracy": 0.5953885028427037,
+     "precision": 0.5575676706061762,
+     "recall": 0.9238787113076438,
+     "f1": 0.6954350927246791,
+     "roc_auc": 0.6684434645748475,
+     "pr_auc": 0.6300362670784322,
+     "ece": 0.009726148854101066,
+     "threshold": 0.38388625592417064,
+     "confusion": [
+      [
+       2535,
+       6963
+      ],
+      [
+       723,
+       8775
+      ]
+     ]
+    },
+    "easy": {
+     "n": 12664,
+     "pos": 9498,
+     "accuracy": 0.8372552116234997,
+     "precision": 0.8676950459804212,
+     "recall": 0.9238787113076438,
+     "f1": 0.8949059201468564,
+     "roc_auc": 0.8734559704493428,
+     "pr_auc": 0.9480695797557763,
+     "ece": 0.2540847056764159,
+     "threshold": 0.38388625592417064,
+     "confusion": [
+      [
+       1828,
+       1338
+      ],
+      [
+       723,
+       8775
+      ]
+     ]
+    },
+    "hard": {
+     "n": 13396,
+     "pos": 9498,
+     "accuracy": 0.6740818154673037,
+     "precision": 0.7066355290707038,
+     "recall": 0.9238787113076438,
+     "f1": 0.8007848147472166,
+     "roc_auc": 0.5093473946771327,
+     "pr_auc": 0.7182366485879583,
+     "ece": 0.1527435025608871,
+     "threshold": 0.38388625592417064,
+     "confusion": [
+      [
+       255,
+       3643
+      ],
+      [
+       723,
+       8775
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 11932,
+     "pos": 9498,
+     "accuracy": 0.773298692591351,
+     "precision": 0.8157478850980757,
+     "recall": 0.9238787113076438,
+     "f1": 0.8664527277215504,
+     "roc_auc": 0.6565646177640997,
+     "pr_auc": 0.8744101465033098,
+     "ece": 0.2535007214457932,
+     "threshold": 0.38388625592417064,
+     "confusion": [
+      [
+       452,
+       1982
+      ],
+      [
+       723,
+       8775
+      ]
+     ]
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.5303131245836109,
+     "precision": 0.5161347517730497,
+     "recall": 0.9696868754163891,
+     "f1": 0.6736866466095811,
+     "roc_auc": 0.5367098150422481,
+     "pr_auc": 0.519901233719978,
+     "ece": 0.006366728270513652,
+     "threshold": 0.43478260869565216,
+     "confusion": [
+      [
+       273,
+       2729
+      ],
+      [
+       91,
+       2911
+      ]
+     ]
+    },
+    "text_swap": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.5303131245836109,
+     "precision": 0.5161347517730497,
+     "recall": 0.9696868754163891,
+     "f1": 0.6736866466095811,
+     "roc_auc": 0.5367098150422481,
+     "pr_auc": 0.519901233719978,
+     "ece": 0.006366728270513652,
+     "threshold": 0.43478260869565216,
+     "confusion": [
+      [
+       273,
+       2729
+      ],
+      [
+       91,
+       2911
+      ]
+     ]
+    }
+   }
+  },
+  "mlp": {
+   "A": {
+    "overall": {
+     "n": 30000,
+     "pos": 15000,
+     "accuracy": 0.6955666666666667,
+     "precision": 0.6251867025135492,
+     "recall": 0.9766666666666667,
+     "f1": 0.7623656753310957,
+     "roc_auc": 0.7782991888888888,
+     "pr_auc": 0.7479221950418736,
+     "ece": 0.006853082345278484,
+     "threshold": 0.391705069124424,
+     "confusion": [
+      [
+       6217,
+       8783
+      ],
+      [
+       350,
+       14650
+      ]
+     ]
+    },
+    "easy": {
+     "n": 20000,
+     "pos": 15000,
+     "accuracy": 0.9703,
+     "precision": 0.9836175641197797,
+     "recall": 0.9766666666666667,
+     "f1": 0.9801297919314912,
+     "roc_auc": 0.9866714000000001,
+     "pr_auc": 0.9931960771506398,
+     "ece": 0.2579009674665926,
+     "threshold": 0.391705069124424,
+     "confusion": [
+      [
+       4756,
+       244
+      ],
+      [
+       350,
+       14650
+      ]
+     ]
+    },
+    "hard": {
+     "n": 20506,
+     "pos": 15000,
+     "accuracy": 0.7177899151467864,
+     "precision": 0.7293274256982127,
+     "recall": 0.9766666666666667,
+     "f1": 0.8350671188759371,
+     "roc_auc": 0.5989600375348105,
+     "pr_auc": 0.8113016127560897,
+     "ece": 0.10226523820421272,
+     "threshold": 0.391705069124424,
+     "confusion": [
+      [
+       69,
+       5437
+      ],
+      [
+       350,
+       14650
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 19494,
+     "pos": 15000,
+     "accuracy": 0.8229198727813686,
+     "precision": 0.8252591257323119,
+     "recall": 0.9766666666666667,
+     "f1": 0.8946018563751832,
+     "roc_auc": 0.7661897789645453,
+     "pr_auc": 0.9048716794333973,
+     "ece": 0.17684964496032538,
+     "threshold": 0.391705069124424,
+     "confusion": [
+      [
+       1392,
+       3102
+      ],
+      [
+       350,
+       14650
+      ]
+     ]
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "n": 18996,
+     "pos": 9498,
+     "accuracy": 0.640450621183407,
+     "precision": 0.5850982393467722,
+     "recall": 0.9656769846283428,
+     "f1": 0.7286883292285692,
+     "roc_auc": 0.7239977065579876,
+     "pr_auc": 0.6983799542395223,
+     "ece": 0.01706794641421762,
+     "threshold": 0.39473684210526316,
+     "confusion": [
+      [
+       2994,
+       6504
+      ],
+      [
+       326,
+       9172
+      ]
+     ]
+    },
+    "easy": {
+     "n": 12664,
+     "pos": 9498,
+     "accuracy": 0.9294061907770057,
+     "precision": 0.9416837782340862,
+     "recall": 0.9656769846283428,
+     "f1": 0.9535294729181828,
+     "roc_auc": 0.9484434133621508,
+     "pr_auc": 0.9753692389751724,
+     "ece": 0.27092895830663044,
+     "threshold": 0.39473684210526316,
+     "confusion": [
+      [
+       2598,
+       568
+      ],
+      [
+       326,
+       9172
+      ]
+     ]
+    },
+    "hard": {
+     "n": 13396,
+     "pos": 9498,
+     "accuracy": 0.6863989250522544,
+     "precision": 0.7029968575151376,
+     "recall": 0.9656769846283428,
+     "f1": 0.8136615657573742,
+     "roc_auc": 0.5898421163117056,
+     "pr_auc": 0.7885313769256576,
+     "ece": 0.12452932491396532,
+     "threshold": 0.39473684210526316,
+     "confusion": [
+      [
+       23,
+       3875
+      ],
+      [
+       326,
+       9172
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 11932,
+     "pos": 9498,
+     "accuracy": 0.7999497150519611,
+     "precision": 0.8165227454820618,
+     "recall": 0.9656769846283428,
+     "f1": 0.8848584245815445,
+     "roc_auc": 0.6468996716516715,
+     "pr_auc": 0.8711716942688185,
+     "ece": 0.22199848305168543,
+     "threshold": 0.39473684210526316,
+     "confusion": [
+      [
+       373,
+       2061
+      ],
+      [
+       326,
+       9172
+      ]
+     ]
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.6389073950699533,
+     "precision": 0.5982563619227145,
+     "recall": 0.845769487008661,
+     "f1": 0.7008004416229645,
+     "roc_auc": 0.7398318953253904,
+     "pr_auc": 0.7336902852879961,
+     "ece": 0.019969439738115626,
+     "threshold": 0.39080459770114945,
+     "confusion": [
+      [
+       1297,
+       1705
+      ],
+      [
+       463,
+       2539
+      ]
+     ]
+    },
+    "text_swap": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.6389073950699533,
+     "precision": 0.5982563619227145,
+     "recall": 0.845769487008661,
+     "f1": 0.7008004416229645,
+     "roc_auc": 0.7398318953253904,
+     "pr_auc": 0.7336902852879961,
+     "ece": 0.019969439738115626,
+     "threshold": 0.39080459770114945,
+     "confusion": [
+      [
+       1297,
+       1705
+      ],
+      [
+       463,
+       2539
+      ]
+     ]
+    }
+   }
+  },
+  "main": {
+   "A": {
+    "overall": {
+     "n": 30000,
+     "pos": 15000,
+     "accuracy": 0.7627333333333334,
+     "precision": 0.6969909027291813,
+     "recall": 0.9296,
+     "f1": 0.7966634291264354,
+     "roc_auc": 0.8488317155555556,
+     "pr_auc": 0.8140286547157618,
+     "ece": 0.010216099021084052,
+     "threshold": 0.3992932862190813,
+     "confusion": [
+      [
+       8938,
+       6062
+      ],
+      [
+       1056,
+       13944
+      ]
+     ]
+    },
+    "easy": {
+     "n": 20000,
+     "pos": 15000,
+     "accuracy": 0.94335,
+     "precision": 0.9945082376435347,
+     "recall": 0.9296,
+     "f1": 0.9609593053306228,
+     "roc_auc": 0.9958863599999999,
+     "pr_auc": 0.998465960723445,
+     "ece": 0.22704803251550787,
+     "threshold": 0.3992932862190813,
+     "confusion": [
+      [
+       4923,
+       77
+      ],
+      [
+       1056,
+       13944
+      ]
+     ]
+    },
+    "hard": {
+     "n": 20506,
+     "pos": 15000,
+     "accuracy": 0.7380278942748464,
+     "precision": 0.7636363636363637,
+     "recall": 0.9296,
+     "f1": 0.8384846662657848,
+     "roc_auc": 0.7035043043952053,
+     "pr_auc": 0.8556971903290908,
+     "ece": 0.07894700637464139,
+     "threshold": 0.3992932862190813,
+     "confusion": [
+      [
+       1190,
+       4316
+      ],
+      [
+       1056,
+       13944
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 19494,
+     "pos": 15000,
+     "accuracy": 0.8602133989945624,
+     "precision": 0.8931019022609364,
+     "recall": 0.9296,
+     "f1": 0.9109855290236174,
+     "roc_auc": 0.86327308262869,
+     "pr_auc": 0.9414429154345106,
+     "ece": 0.1652250280187191,
+     "threshold": 0.3992932862190813,
+     "confusion": [
+      [
+       2825,
+       1669
+      ],
+      [
+       1056,
+       13944
+      ]
+     ]
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "n": 18996,
+     "pos": 9498,
+     "accuracy": 0.6953569172457359,
+     "precision": 0.6385011569754423,
+     "recall": 0.9006106548747105,
+     "f1": 0.7472373880759992,
+     "roc_auc": 0.775646470507406,
+     "pr_auc": 0.7383923570661484,
+     "ece": 0.012332517639398641,
+     "threshold": 0.4008799048080923,
+     "confusion": [
+      [
+       4655,
+       4843
+      ],
+      [
+       944,
+       8554
+      ]
+     ]
+    },
+    "easy": {
+     "n": 12664,
+     "pos": 9498,
+     "accuracy": 0.9077700568540745,
+     "precision": 0.9744816586921851,
+     "recall": 0.9006106548747105,
+     "f1": 0.9360910483694462,
+     "roc_auc": 0.9741098202407742,
+     "pr_auc": 0.9893997474609078,
+     "ece": 0.2571940021117715,
+     "threshold": 0.4008799048080923,
+     "confusion": [
+      [
+       2942,
+       224
+      ],
+      [
+       944,
+       8554
+      ]
+     ]
+    },
+    "hard": {
+     "n": 13396,
+     "pos": 9498,
+     "accuracy": 0.69498357718722,
+     "precision": 0.7313611491108071,
+     "recall": 0.9006106548747105,
+     "f1": 0.8072095876191374,
+     "roc_auc": 0.6408965037169663,
+     "pr_auc": 0.8102257163393602,
+     "ece": 0.10600881519772931,
+     "threshold": 0.4008799048080923,
+     "confusion": [
+      [
+       756,
+       3142
+      ],
+      [
+       944,
+       8554
+      ]
+     ]
+    },
+    "swapped": {
+     "n": 11932,
+     "pos": 9498,
+     "accuracy": 0.7971002346630909,
+     "precision": 0.8527564549895325,
+     "recall": 0.9006106548747105,
+     "f1": 0.876030518715756,
+     "roc_auc": 0.7332965959360385,
+     "pr_auc": 0.8967877155714357,
+     "ece": 0.20693319159524948,
+     "threshold": 0.4008799048080923,
+     "confusion": [
+      [
+       957,
+       1477
+      ],
+      [
+       944,
+       8554
+      ]
+     ]
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.7043637574950034,
+     "precision": 0.656945510360706,
+     "recall": 0.8554297135243171,
+     "f1": 0.743163073361308,
+     "roc_auc": 0.7930914145177921,
+     "pr_auc": 0.7757615625980723,
+     "ece": 0.016956148396498793,
+     "threshold": 0.3763440860215054,
+     "confusion": [
+      [
+       1661,
+       1341
+      ],
+      [
+       434,
+       2568
+      ]
+     ]
+    },
+    "text_swap": {
+     "n": 6004,
+     "pos": 3002,
+     "accuracy": 0.7043637574950034,
+     "precision": 0.656945510360706,
+     "recall": 0.8554297135243171,
+     "f1": 0.743163073361308,
+     "roc_auc": 0.7930914145177921,
+     "pr_auc": 0.7757615625980723,
+     "ece": 0.016956148396498793,
+     "threshold": 0.3763440860215054,
+     "confusion": [
+      [
+       1661,
+       1341
+      ],
+      [
+       434,
+       2568
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "val_thresholds": {
+  "cosine": {
+   "A": 0.4166666666666667,
+   "B-cap": 0.37681159420289856,
+   "B-ocr": 0.35294117647058826
+  },
+  "logreg": {
+   "A": 0.37037037037037035,
+   "B-cap": 0.38388625592417064,
+   "B-ocr": 0.43478260869565216
+  },
+  "mlp": {
+   "A": 0.391705069124424,
+   "B-cap": 0.39473684210526316,
+   "B-ocr": 0.39080459770114945
+  },
+  "main": {
+   "A": 0.3992932862190813,
+   "B-cap": 0.4008799048080923,
+   "B-ocr": 0.3763440860215054
+  }
+ },
+ "calibration_methods": {
+  "cosine": {
+   "A": "isotonic",
+   "B-cap": "isotonic",
+   "B-ocr": "isotonic"
+  },
+  "logreg": {
+   "A": "isotonic",
+   "B-cap": "isotonic",
+   "B-ocr": "isotonic"
+  },
+  "mlp": {
+   "A": "isotonic",
+   "B-cap": "isotonic",
+   "B-ocr": "isotonic"
+  },
+  "main": {
+   "A": "isotonic",
+   "B-cap": "platt",
+   "B-ocr": "isotonic"
+  }
+ },
+ "error_analysis": {
+  "n_false_positives": 12246,
+  "n_false_negatives": 2434,
+  "swapped_by_group": [
+   {
+    "swap_group": "animal",
+    "n": 809,
+    "false_positives": 183,
+    "fp_rate": 0.22620519159456118
+   },
+   {
+    "swap_group": "color",
+    "n": 2416,
+    "false_positives": 1470,
+    "fp_rate": 0.6084437086092715
+   },
+   {
+    "swap_group": "food",
+    "n": 402,
+    "false_positives": 97,
+    "fp_rate": 0.24129353233830847
+   },
+   {
+    "swap_group": "number",
+    "n": 887,
+    "false_positives": 530,
+    "fp_rate": 0.5975197294250282
+   },
+   {
+    "swap_group": "people",
+    "n": 1664,
+    "false_positives": 603,
+    "fp_rate": 0.3623798076923077
+   },
+   {
+    "swap_group": "vehicle",
+    "n": 750,
+    "false_positives": 263,
+    "fp_rate": 0.3506666666666667
+   }
+  ],
+  "fp_by_mode_type": [
+   {
+    "mode": "A",
+    "neg_type": "easy",
+    "n": 5000,
+    "fp": 77,
+    "fp_rate": 0.0154
+   },
+   {
+    "mode": "A",
+    "neg_type": "hard",
+    "n": 5506,
+    "fp": 4316,
+    "fp_rate": 0.7838721394841991
+   },
+   {
+    "mode": "A",
+    "neg_type": "swapped",
+    "n": 4494,
+    "fp": 1669,
+    "fp_rate": 0.3713840676457499
+   },
+   {
+    "mode": "B-cap",
+    "neg_type": "easy",
+    "n": 3166,
+    "fp": 224,
+    "fp_rate": 0.07075173720783323
+   },
+   {
+    "mode": "B-cap",
+    "neg_type": "hard",
+    "n": 3898,
+    "fp": 3142,
+    "fp_rate": 0.806054386865059
+   },
+   {
+    "mode": "B-cap",
+    "neg_type": "swapped",
+    "n": 2434,
+    "fp": 1477,
+    "fp_rate": 0.6068200493015612
+   },
+   {
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "n": 3002,
+    "fp": 1341,
+    "fp_rate": 0.4467021985343105
+   }
+  ],
+  "top_false_positives": [
+   {
+    "pair_id": "test-0014891",
+    "mode": "A",
+    "neg_type": "swapped",
+    "swap_group": "people",
+    "text": "A little boy uses a plunger in the toilet.",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0001967",
+    "mode": "A",
+    "neg_type": "swapped",
+    "swap_group": "people",
+    "text": "Three urinals with goofy card board cut out women behind them.",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0006689",
+    "mode": "A",
+    "neg_type": "swapped",
+    "swap_group": "people",
+    "text": "A woman sitting on top of a bench near some pigeons.",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0012244",
+    "mode": "A",
+    "neg_type": "hard",
+    "swap_group": "",
+    "text": "A baby boy has a toothbrush in his mouth.",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0017500",
+    "mode": "A",
+    "neg_type": "hard",
+    "swap_group": "",
+    "text": "parents and their child walking with tennis rackets and balls",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0009166",
+    "mode": "A",
+    "neg_type": "hard",
+    "swap_group": "",
+    "text": "Two woman at a table full of wine",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0011794",
+    "mode": "A",
+    "neg_type": "hard",
+    "swap_group": "",
+    "text": "Man looking in to the drawer of a completely empty refrigerator",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0022763",
+    "mode": "A",
+    "neg_type": "swapped",
+    "swap_group": "number",
+    "text": "For lunch there are four pieces of fish and fries left over.",
+    "prob": 0.967948717948718
+   },
+   {
+    "pair_id": "test-0049001",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "SANDWICHIBA BAR LO PLEASEBUY Hot Drinks w&0lm Coffee Cappuccino \u00a31.00 $a000 HotChocolate\u00a31.00",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0050785",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "RICHARD RICHARD RICHARD RICHAR MORGAN MORGAN MORGAN MORGAN HEINLEIN black Anastonishi WOKEN man CITZENOFTHE ALTERED BROKEN ANGELS FURIES CARBON Anne AneMcCaffrey ANNE AcCAFFREY ANNE Anne AnNE TheWhifeDragon MCCAFFREY The heRenegades ECRYSTA SINGER MCCAFFREY MCCaffrey ILLASHANDRA DRAGONFLIGHT Pern PERI SKIES OF PERIT Dragonquest",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0052513",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "HISKEY Repesads Jose Quervo JACK DANIELS CHIVAS REGAL Especial Old 12 Jennessee nnessee REHLM SCOTCH SECMESMETICS WHISKEY WHISKY 75cl 40% Vol. JACKDANTEL",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0053409",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "PORT BRE HJUL & ST RUGBRE UDOS Julebr Roosie Black 2009 BROWNA Brewer Con'sofChrist ANTAK LTTLE BRYGGERIET DLEVLER Imperial mperial Stou Haandsog",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0054547",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "BEETHOVEN WING EMPEROR piano concerto NIKITA MAGALOFF withthe Vienna conductedb WILLEM VANO VANOTTERLOO PHILIPS RECORDS PRODUCT",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0049041",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "PORT BRE HJUL & ST RUGBRE UDOS Julebr Roosie Black 2009 BROWNA Brewer Con'sofChrist ANTAK LTTLE BRYGGERIET DLEVLER Imperial mperial Stou Haandsog",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0051201",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "\"This the first work of high heroic fantasy I've seen that has taken work Tolkien, assimilated totally and deeply and absolutely and produced something altogether new and yet incontestably based the master.. I'm deeply impressed.\" DIVIDED JUDITH TARR ALLEGIANCE ELIZABETH MOON PAKSENARRION BOOKT CHE DEED 0F",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0051877",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "R COLORAD Gola BOURIO RICHARDS TRUCHT TUICHT EWHISKEY OOLS kLoelle GLEN BRETON CARIBOU HIGH WES SALK WISER'S BALCONIS RYE ebattle WHISKE WHISKY SABA",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0049685",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "SRIRACHA HOT CHiti OT S PubiG TAPATIO KIMLAN SOY SAUC SALSA PICANTE MADE IN TAIWAN SE KIMLAN FOODSCO HUY FONG FONG FOODS, INC. Hot Sauce www.huy 10 FL. oz. 296 NET WT. 17 oz.( lb. oz.)(482g) (439a)",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0049391",
+    "mode": "B-ocr",
+    "neg_type": "text_swap",
+    "swap_group": "nearest",
+    "text": "SUBWAY DERRYSCROSS TRAVEL Pjmouthr Premier Private Company FILImGAn TARGET TRAV TARGET TRAVEL TARGET TRAVEL OPTARE Y49HBT",
+    "prob": 0.9384615384615385
+   },
+   {
+    "pair_id": "test-0032471",
+    "mode": "B-cap",
+    "neg_type": "swapped",
+    "swap_group": "color",
+    "text": "A kid in a black shirt that says Gators is standing in front of a sign with hot air balloons on it.",
+    "prob": 0.9359832448805545
+   },
+   {
+    "pair_id": "test-0000113",
+    "mode": "A",
+    "neg_type": "swapped",
+    "swap_group": "color",
+    "text": "A red fire hydrant covered in snow next to a tree.",
+    "prob": 0.9254901960784314
+   }
+  ],
+  "top_false_negatives": [
+   {
+    "pair_id": "test-0008436",
+    "mode": "A",
+    "text": "Three men, one caring a skateboard, are wearing matching t-shirts.",
+    "prob": 0.004158004158004158
+   },
+   {
+    "pair_id": "test-0040201",
+    "mode": "B-cap",
+    "text": "Books stacked on top of one another with one that says EVIDENCE on top.",
+    "prob": 0.005752676050372715
+   },
+   {
+    "pair_id": "test-0039404",
+    "mode": "B-cap",
+    "text": "A yellow sign shaped like a hand has STOP written on it.",
+    "prob": 0.006252068210558138
+   },
+   {
+    "pair_id": "test-0031789",
+    "mode": "B-cap",
+    "text": "A yellow street sign on a post reads, \"hati-hati busway.\"",
+    "prob": 0.0066454522389975314
+   },
+   {
+    "pair_id": "test-0002040",
+    "mode": "A",
+    "text": "A woman sitting on a toilet wearing pink shoes.",
+    "prob": 0.009345794392523364
+   },
+   {
+    "pair_id": "test-0019093",
+    "mode": "A",
+    "text": "The emu is sitting in the dirt near a metal fence.",
+    "prob": 0.009345794392523364
+   },
+   {
+    "pair_id": "test-0031458",
+    "mode": "B-cap",
+    "text": "ad for mobilcom debitel that has a picture of a smartwatch and cellphone on it with a price of 44.99 mtl",
+    "prob": 0.010178566509333452
+   },
+   {
+    "pair_id": "test-0008936",
+    "mode": "A",
+    "text": "The man is using chopsticks to eat his meal.",
+    "prob": 0.013071895424836602
+   },
+   {
+    "pair_id": "test-0006919",
+    "mode": "A",
+    "text": "Woman snow boarding off of a cliff in the air.",
+    "prob": 0.013071895424836602
+   },
+   {
+    "pair_id": "test-0038756",
+    "mode": "B-cap",
+    "text": "a poster for a film that says 'zion fiction film'",
+    "prob": 0.01322891192043731
+   },
+   {
+    "pair_id": "test-0047635",
+    "mode": "B-cap",
+    "text": "The room has a Bachelorette Party in this hotel room",
+    "prob": 0.013598327687307508
+   },
+   {
+    "pair_id": "test-0035852",
+    "mode": "B-cap",
+    "text": "a baseball player seemingly ready to throw the ball",
+    "prob": 0.015222231207012651
+   },
+   {
+    "pair_id": "test-0054344",
+    "mode": "B-ocr",
+    "text": "K M 7 N LOVE Haos \"Thesecretofmanavin \"Thesecretf \"Traintovertillit'sover.\"",
+    "prob": 0.01682692307692308
+   },
+   {
+    "pair_id": "test-0048439",
+    "mode": "B-cap",
+    "text": "the letters gpa that are on a book",
+    "prob": 0.017272045010452434
+   },
+   {
+    "pair_id": "test-0039835",
+    "mode": "B-cap",
+    "text": "Six USC Trojan cheerleaders walk behind a man wearing a cap and sunglasses.",
+    "prob": 0.017367070351608557
+   },
+   {
+    "pair_id": "test-0046814",
+    "mode": "B-cap",
+    "text": "A red sign that says STOP is posted on a chain link fence at the airport.",
+    "prob": 0.01829580343953746
+   },
+   {
+    "pair_id": "test-0039223",
+    "mode": "B-cap",
+    "text": "An item with a picture of a dog and the words Dogy Box on it.",
+    "prob": 0.019011154837367105
+   },
+   {
+    "pair_id": "test-0049746",
+    "mode": "B-ocr",
+    "text": "E IUSCUIIT im Grassi Schumann Haus Haus Museum bildende Kunste Stadtgeschichtl Museum Zeitgeschichti Forum Zeitgeschic Nikolaikirche Univ.",
+    "prob": 0.019230769230769232
+   },
+   {
+    "pair_id": "test-0048894",
+    "mode": "B-cap",
+    "text": "Stop sign with a smaller bicycle on top of it on the side of a street.",
+    "prob": 0.02086453880266386
+   },
+   {
+    "pair_id": "test-0040860",
+    "mode": "B-cap",
+    "text": "A black and white photograph of a woman smiling inside a taxi.",
+    "prob": 0.02258421201868038
+   }
+  ]
+ },
+ "cpu_latency_ms": {
+  "median": 9295.270486500158,
+  "p90": 9426.651272199524,
+  "runs": 20,
+  "image_size": [
+   1024,
+   618
+  ],
+  "n_captions": 1,
+  "torch_threads": 4,
+  "includes": "EasyOCR + masking + CLIP + head"
+ },
+ "easyocr_gap": {
+  "official_ocr": {
+   "n": 810,
+   "pos": 405,
+   "accuracy": 0.7975308641975308,
+   "precision": 0.7613882863340564,
+   "recall": 0.8666666666666667,
+   "f1": 0.8106235565819861,
+   "roc_auc": 0.8750099070263678,
+   "pr_auc": 0.8641204219449468,
+   "ece": 0.057485137256451636,
+   "threshold": 0.3763440860215054,
+   "confusion": [
+    [
+     295,
+     110
+    ],
+    [
+     54,
+     351
+    ]
+   ]
+  },
+  "easyocr": {
+   "n": 810,
+   "pos": 405,
+   "accuracy": 0.7320987654320987,
+   "precision": 0.7043478260869566,
+   "recall": 0.8,
+   "f1": 0.7491329479768787,
+   "roc_auc": 0.8147508001828989,
+   "pr_auc": 0.8011334128429584,
+   "ece": 0.08759960078930774,
+   "threshold": 0.3763440860215054,
+   "confusion": [
+    [
+     269,
+     136
+    ],
+    [
+     81,
+     324
+    ]
+   ]
+  },
+  "drop": {
+   "roc_auc": 0.06025910684346891,
+   "f1": 0.061490608605107466,
+   "accuracy": 0.0654320987654321
+  },
+  "n_images": 405,
+  "easyocr_detection_rate": 0.81
+ },
+ "summary": {
+  "cosine": {
+   "A": {
+    "overall": {
+     "roc_auc": 0.7003572711111111,
+     "f1": 0.7491415926952717
+    },
+    "easy": {
+     "roc_auc": 0.9962438133333333,
+     "f1": 0.9856769961849943
+    },
+    "hard": {
+     "roc_auc": 0.44105846954837147,
+     "f1": 0.8359776346039225
+    },
+    "swapped": {
+     "roc_auc": 0.6888455867082035,
+     "f1": 0.8751485619206085
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "roc_auc": 0.6069599562381965,
+     "f1": 0.7251081392118734
+    },
+    "easy": {
+     "roc_auc": 0.9806883571725111,
+     "f1": 0.9606224699016875
+    },
+    "hard": {
+     "roc_auc": 0.32333502254424007,
+     "f1": 0.8109355583170602
+    },
+    "swapped": {
+     "roc_auc": 0.5750560425902923,
+     "f1": 0.8736731376111696
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "roc_auc": 0.7286263965262332,
+     "f1": 0.695121951219512
+    },
+    "text_swap": {
+     "roc_auc": 0.7286263965262332,
+     "f1": 0.695121951219512
+    }
+   }
+  },
+  "logreg": {
+   "A": {
+    "overall": {
+     "roc_auc": 0.7389964422222223,
+     "f1": 0.7290290316637275
+    },
+    "easy": {
+     "roc_auc": 0.94978612,
+     "f1": 0.9306498219205699
+    },
+    "hard": {
+     "roc_auc": 0.5643309117326554,
+     "f1": 0.8198798212118521
+    },
+    "swapped": {
+     "roc_auc": 0.7184713024773772,
+     "f1": 0.8616313071610775
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "roc_auc": 0.6684434645748475,
+     "f1": 0.6954350927246791
+    },
+    "easy": {
+     "roc_auc": 0.8734559704493428,
+     "f1": 0.8949059201468564
+    },
+    "hard": {
+     "roc_auc": 0.5093473946771327,
+     "f1": 0.8007848147472166
+    },
+    "swapped": {
+     "roc_auc": 0.6565646177640997,
+     "f1": 0.8664527277215504
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "roc_auc": 0.5367098150422481,
+     "f1": 0.6736866466095811
+    },
+    "text_swap": {
+     "roc_auc": 0.5367098150422481,
+     "f1": 0.6736866466095811
+    }
+   }
+  },
+  "mlp": {
+   "A": {
+    "overall": {
+     "roc_auc": 0.7782991888888888,
+     "f1": 0.7623656753310957
+    },
+    "easy": {
+     "roc_auc": 0.9866714000000001,
+     "f1": 0.9801297919314912
+    },
+    "hard": {
+     "roc_auc": 0.5989600375348105,
+     "f1": 0.8350671188759371
+    },
+    "swapped": {
+     "roc_auc": 0.7661897789645453,
+     "f1": 0.8946018563751832
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "roc_auc": 0.7239977065579876,
+     "f1": 0.7286883292285692
+    },
+    "easy": {
+     "roc_auc": 0.9484434133621508,
+     "f1": 0.9535294729181828
+    },
+    "hard": {
+     "roc_auc": 0.5898421163117056,
+     "f1": 0.8136615657573742
+    },
+    "swapped": {
+     "roc_auc": 0.6468996716516715,
+     "f1": 0.8848584245815445
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "roc_auc": 0.7398318953253904,
+     "f1": 0.7008004416229645
+    },
+    "text_swap": {
+     "roc_auc": 0.7398318953253904,
+     "f1": 0.7008004416229645
+    }
+   }
+  },
+  "main": {
+   "A": {
+    "overall": {
+     "roc_auc": 0.8488317155555556,
+     "f1": 0.7966634291264354
+    },
+    "easy": {
+     "roc_auc": 0.9958863599999999,
+     "f1": 0.9609593053306228
+    },
+    "hard": {
+     "roc_auc": 0.7035043043952053,
+     "f1": 0.8384846662657848
+    },
+    "swapped": {
+     "roc_auc": 0.86327308262869,
+     "f1": 0.9109855290236174
+    }
+   },
+   "B-cap": {
+    "overall": {
+     "roc_auc": 0.775646470507406,
+     "f1": 0.7472373880759992
+    },
+    "easy": {
+     "roc_auc": 0.9741098202407742,
+     "f1": 0.9360910483694462
+    },
+    "hard": {
+     "roc_auc": 0.6408965037169663,
+     "f1": 0.8072095876191374
+    },
+    "swapped": {
+     "roc_auc": 0.7332965959360385,
+     "f1": 0.876030518715756
+    }
+   },
+   "B-ocr": {
+    "overall": {
+     "roc_auc": 0.7930914145177921,
+     "f1": 0.743163073361308
+    },
+    "text_swap": {
+     "roc_auc": 0.7930914145177921,
+     "f1": 0.743163073361308
+    }
+   }
+  }
+ },
+ "counts": {
+  "test_pairs": 55000,
+  "val_pairs": 47336,
+  "images": {
+   "coco/train": 113287,
+   "coco/val": 5000,
+   "coco/test": 5000,
+   "tc/train": 19758,
+   "tc/val": 2195,
+   "tc/test": 3166
+  }
+ }
+}

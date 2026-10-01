@@ -1,0 +1,20 @@
+# Model inference -- versions from model_outputs/requirements_inference.txt.
+# torch / torchvision are CPU builds: install them first from https://download.pytorch.org/whl/cpu
+torch==2.10.0
+torchvision==0.25.0
+transformers==5.0.0
+tokenizers==0.22.2
+safetensors==0.7.0
+easyocr==1.7.2
+opencv-python-headless==4.13.0.92
+numpy==2.0.2
+pillow==11.3.0
+
+# API
+fastapi==0.141.1
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+
+# Tests
+pytest==9.1.1
+httpx==0.28.1

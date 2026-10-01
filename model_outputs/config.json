@@ -1,0 +1,180 @@
+{
+ "clip_id": "openai/clip-vit-base-patch32",
+ "clip_dims": {
+  "img_dim": 768,
+  "txt_dim": 512,
+  "proj_dim": 512,
+  "n_img_tokens": 50
+ },
+ "head_kwargs": {
+  "img_dim": 768,
+  "txt_dim": 512,
+  "n_img_tokens": 50,
+  "d_model": 256,
+  "n_layers": 2,
+  "n_heads": 4,
+  "d_ffn": 1024,
+  "dropout": 0.1,
+  "n_modes": 3,
+  "itc_dim": 128,
+  "temp_init": 0.07
+ },
+ "head_parameters": 2503427,
+ "modes": {
+  "A": 0,
+  "B-cap": 1,
+  "B-ocr": 2
+ },
+ "image": {
+  "work_side": 336,
+  "image_size": 224,
+  "dilate_px": 3,
+  "inpaint_radius": 3
+ },
+ "max_text_tokens": 77,
+ "ocr": {
+  "langs": [
+   "en"
+  ],
+  "min_conf": 0.5,
+  "min_chars": 3,
+  "max_side": 1024,
+  "engine": "easyocr",
+  "training_ocr_source": "rosetta"
+ },
+ "cleaning": {
+  "unicode": "NFKC",
+  "collapse_whitespace": true,
+  "min_words_training": 3
+ },
+ "seed": 42,
+ "training": {
+  "BATCH": 256,
+  "MIX_COCO": 0.6666666666666666,
+  "LR": 0.0002,
+  "WEIGHT_DECAY": 0.01,
+  "WARMUP_STEPS": 500,
+  "EPOCHS": 6,
+  "PATIENCE": 2,
+  "ITC_WEIGHT": 0.5,
+  "POS_WEIGHT": 3.0,
+  "GRAD_CLIP": 1.0,
+  "OCR_NOISE_P": 0.3,
+  "OCR_NOISE_RATE": 0.05,
+  "HARD_TOPK": 20,
+  "HARD_POOL": 10,
+  "FN_TEXT_COS": 0.9,
+  "TEXTSWAP_POOL": 5,
+  "TC_VAL_FRAC": 0.1
+ },
+ "trained_epochs": 6,
+ "best_val_roc_auc": 0.8276072445632557,
+ "early_stopped": false,
+ "swap_vocab": {
+  "color": [
+   "red",
+   "blue",
+   "green",
+   "yellow",
+   "black",
+   "white",
+   "orange",
+   "pink",
+   "purple",
+   "brown",
+   "gray"
+  ],
+  "number": [
+   "one",
+   "two",
+   "three",
+   "four",
+   "five",
+   "six",
+   "seven",
+   "eight",
+   "nine",
+   "ten"
+  ],
+  "people": [
+   "man",
+   "woman",
+   "boy",
+   "girl",
+   "men",
+   "women"
+  ],
+  "animal": [
+   "dog",
+   "cat",
+   "horse",
+   "sheep",
+   "cow",
+   "elephant",
+   "bear",
+   "zebra",
+   "giraffe",
+   "bird"
+  ],
+  "vehicle": [
+   "car",
+   "bus",
+   "truck",
+   "train",
+   "motorcycle",
+   "bicycle",
+   "airplane",
+   "boat"
+  ],
+  "food": [
+   "pizza",
+   "sandwich",
+   "cake",
+   "donut",
+   "banana",
+   "apple",
+   "broccoli",
+   "carrot"
+  ]
+ },
+ "swap_rules": {
+  "color_aliases": {
+   "grey": "gray"
+  },
+  "people_pairs": {
+   "man": "woman",
+   "woman": "man",
+   "boy": "girl",
+   "girl": "boy",
+   "men": "women",
+   "women": "men"
+  },
+  "number_note": "swaps always change the value; 'one' is never a source or target so noun number stays grammatical",
+  "plural": "simple plurals kept (dogs->cats, buses, sandwiches); a/an article fixed after a swap"
+ },
+ "calibration_ece_bins": 15,
+ "data_sources": {
+  "coco_train": "http://images.cocodataset.org/zips/train2014.zip",
+  "coco_val": "http://images.cocodataset.org/zips/val2014.zip",
+  "karpathy": "https://cs.stanford.edu/people/karpathy/deepimagesent/caption_datasets.zip",
+  "textcaps_train": "https://dl.fbaipublicfiles.com/textvqa/data/textcaps/TextCaps_0.1_train.json",
+  "textcaps_val": "https://dl.fbaipublicfiles.com/textvqa/data/textcaps/TextCaps_0.1_val.json",
+  "textvqa_images": "https://dl.fbaipublicfiles.com/textvqa/images/train_val_images.zip",
+  "ocr_train": "https://dl.fbaipublicfiles.com/textvqa/data/TextVQA_Rosetta_OCR_v0.2_train.json",
+  "ocr_val": "https://dl.fbaipublicfiles.com/textvqa/data/TextVQA_Rosetta_OCR_v0.2_val.json"
+ },
+ "library_versions": {
+  "python": "3.12.13",
+  "torch": "2.10.0+cu128",
+  "transformers": "5.0.0",
+  "easyocr": "1.7.2",
+  "opencv": "4.13.0",
+  "numpy": "2.0.2",
+  "pillow": "11.3.0",
+  "pandas": "2.3.3",
+  "scikit-learn": "1.6.1",
+  "tokenizers": "0.22.2"
+ },
+ "mismatch_core_version": "1.0.0",
+ "mismatch_core_sha256": "a562004565489d9fdd24e5ec73020828593985fcf2ce8b3ace31965fea5f8426"
+}

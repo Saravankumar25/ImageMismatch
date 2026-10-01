@@ -1,0 +1,62 @@
+# Full stack (spec section 10): `docker compose up --build`, then open http://localhost
+name: mismatch
+
+services:
+  backend:
+    build:
+      context: ./backend
+    image: mismatch-backend:latest
+    container_name: mismatch-backend
+    # Internal only: reachable from the frontend container as http://backend:8000, no host port.
+    expose:
+      - "8000"
+    environment:
+      MODEL_DIR: /app/model_outputs
+      MAX_UPLOAD_MB: ${MAX_UPLOAD_MB:-10}
+      MAX_CAPTIONS: ${MAX_CAPTIONS:-5}
+      MAX_CAPTION_CHARS: ${MAX_CAPTION_CHARS:-300}
+      TORCH_THREADS: ${TORCH_THREADS:-}   # empty -> min(CPU cores available to the container, 4)
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    # Hardening: the root filesystem is read-only, so uploaded images cannot be written to disk
+    # (acceptance criterion 12.4). Only /tmp is writable, and it lives in RAM.
+    # Spec 7.6 / 10.6 resources: 4 vCPU, RSS <= 3 GB. Latency targets are measured under this limit.
+    cpus: 4
+    mem_limit: 3g
+    read_only: true
+    tmpfs:
+      - /tmp:size=256m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      # python:3.12-slim has no curl; urlopen raises on the 503 returned while models load.
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://127.0.0.1:8000/api/health', timeout=5).status == 200 else 1)"]
+      interval: 15s
+      timeout: 6s
+      retries: 3
+      start_period: 120s
+      start_interval: 3s
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE: ${VITE_API_BASE:-/api}
+    image: mismatch-frontend:latest
+    container_name: mismatch-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    # Nginx only needs its cache/pid dirs writable; request bodies are kept in memory (nginx.conf).
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped

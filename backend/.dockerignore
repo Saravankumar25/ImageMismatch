@@ -1,0 +1,21 @@
+# Local environments and caches
+.venv/
+venv/
+**/__pycache__/
+**/*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.log
+.env
+.env.*
+
+# Training-time artifacts the API never reads (keeps the image small)
+model_outputs/figures/
+model_outputs/test_pairs.csv
+
+# Docker files themselves
+Dockerfile
+.dockerignore
